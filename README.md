@@ -1,1 +1,0 @@
-# Sit_on chair
