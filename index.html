@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>My project</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="js/app.js"></script>
 </head>
 
 <body>
@@ -15,35 +16,51 @@
         sit <span class="color">on</span> chair
       </div>
       <nav>
-        <li>kontakt</li>
-        <li>galeria</li>
-        <li>o firmie</li>
+        <ul class="main_menu">
+          <li>
+            <a href="#">o firmie</a>
+            <ul class="hidden dropdown_menu">
+              <li>Aktualności</li>
+              <li>Nasz team</li>
+              <li>Historia</li>
+            </ul>
+          </li>
+          <a href="#"><li>galeria</li></a>
+          <a href="#"><li>kontakt</li></a>
+        </ul>
       </nav>
+      <!--<ul class="sub_menu hidden">
+        <div class="triangle"></div>
+        <li>Aktualności</li>
+        <li>Nasz team</li>
+        <li>Historia</li>
+      </ul>-->
     </div>
   </header>
 
   <section id="first">
     <!--czarny fotel oraz tekst-->
     <div class="main-width">
+
+
       <div class="arrow">
-        <
+        < </div>
+          <img class="gallery" src="images/black_chair.png">
+          <article>
+            <h1>sit <span class="color">on</span> our <span class="color">chair</span></h1>
+            <p>Vicious and viscous, this menacing brew pours opaque black with a creamy maduro-colored head. Its aroma offers seductive whiskey, chewy red wine, dark fruit and lavish tobacco.
+            </p>
+            <div class="button">
+              zobacz więcej
+            </div>
+          </article>
+          <div class="arrow">
+            >
+          </div>
       </div>
-      <img src="images/black_chair.png">
-      <article>
-        <h1>sit <span class="color">on</span> our <span class="color">chair</span></h1>
-        <p>Vicious and viscous, this menacing brew pours opaque black with a creamy maduro-colored head. Its aroma offers seductive whiskey, chewy red wine, dark fruit and lavish tobacco.
-        </p>
-        <div class="button">
-          zobacz więcej
-        </div>
-      </article>
-      <div class="arrow">
-        >
-      </div>
-    </div>
   </section>
 
-  <section>
+  <section id="second">
     <!--zdjęcia i tekst-->
     <div class="main-width">
       <div class="box photo1">
@@ -56,8 +73,8 @@
           <p class="underline">Chair MARGARITA</p>
         </div>
       </div>
-      <div  class="box text">
-        <h2  class="underline">Finds all inputs</h2>
+      <div class="box text">
+        <h2 class="underline">Finds all inputs</h2>
         <p>As expected, the 12-ounce bottle releases a cloudy, pale, straw-colored beer with plenty of yeast in suspension. Head is pure white, with a tight, creamy lace and plenty of healthy-looking stick and stay on the glass.</p>
         <br>
         <p>Cloudy and dirty-peach-colored, topped with a thick, frothy, creamy foam head.</p>
@@ -68,8 +85,13 @@
 
   <section id="pricelist">
     <!-- cennik-->
-    <div class="main-width">
-      <div class="subtitle underline">cennik</div>
+  <!--  <div class="main-width">-->
+  <div class="main-width">
+  <div>
+    <div class="subtitle underline">cennik</div>
+  </div>
+
+      <div class="price-tags">
       <div class="price">
         <div class="outer-circle">
           <div class="inner-circle">
@@ -79,90 +101,192 @@
           basic plan
         </div>
         <div class="price-circle">
-          85<div class="upperindex">99</div><br>
+          85
+          <div class="upperindex">99</div><br>
           <div class="smalltext">pln/msc</div>
         </div>
-        <div class="product_info buy">Zakup twoaru + dowóz</div>
-        <div class="product_info service">Serwis</div>
+        <div class="product_info">
+        <div class= "info-1">Zakup twoaru + dowóz</div>
+        <div class="info-2">Serwis</div>
+      </div>
         <div class="button">
           dołącz
         </div>
       </div>
-    <div class="price middle">
-      <div class="outer-circle">
-        <div class="inner-circle">
+      <div class="price">
+        <div class="outer-circle">
+          <div class="inner-circle">
+          </div>
+        </div>
+        <div class="price_title">
+          basic plan
+        </div>
+        <div class="price-circle">
+          95
+          <div class="upperindex">99</div><br>
+          <div class="smalltext">pln/msc</div>
+        </div>
+        <div class="product_info">
+        <div class= "info-1">Zakup twoaru + dowóz</div>
+        <div class="info-2">Serwis</div>
+        <div class="info-3">Gwarancja</div>
+      </div>
+        <div class="button">
+          dołącz
         </div>
       </div>
-      <div class="price_title">
-        basic plan
-      </div>
-      <div class="price-circle">
-        95<div class="upperindex">99</div><br>
-        <div class="smalltext">pln/msc</div>
-      </div>
-      <div class="product_info buy">Zakup towaru + dowóz</div>
-      <div class="product_info service">Serwis</div>
-      <div class="product_info warranty">Gwarancja 5 lat</div>
-      <div class="button">
-        dołącz
-      </div>
-    </div>
-    <div class="price">
-      <div class="outer-circle .color">
-        <div class="inner-circle">
+      <div class="price">
+        <div class="outer-circle">
+          <div class="inner-circle">
+          </div>
         </div>
+        <div class="price_title">
+          basic plan
+        </div>
+        <div class="price-circle">
+          211
+          <div class="upperindex">00</div><br>
+          <div class="smalltext">pln/msc</div>
+        </div>
+        <div class="product_info">
+        <div class= "info-1">Zakup twoaru + dowóz</div>
+        <div class="info-2">Serwis</div>
+        <div class="info-3">Gwarancja</div>
+        <div class="info-4">Porady</div>
       </div>
-      <div class="price_title">
-        basic plan
-      </div>
-      <div class="price-circle">
-        <div class="bigprice">211</div><div class="upperindex ">00</div><br>
-        <div class="smalltext">pln/msc</div>
-      </div>
-      <div class="product_info buy">Zakup towaru + dowóz</div>
-      <div class="product_info service">Serwis</div>
-      <div class="product_info warranty">Gwarancja 6 lat</div>
-      <div class="product_info advices">Porady projektanta</div>
-      <div class="button">
-        dołącz
+        <div class="button">
+          dołącz
+        </div>
       </div>
     </div>
   </div>
   </section>
 
+  <section class="application ">
+    <div class="main-width">
+        <section class="choice_part inline">
+            <div class="header">
+                <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                <span class="green_bell"></span>
+            <div>
 
-  <section  id="contact">
+            <div class="form">
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz rodzaj</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel hidden">
+                        <li data-price = 500>Clair</li>
+                        <li data-price = 600>Margarita</li>
+                        <li data-price = 800>Selena</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz kolor</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel hidden">
+                        <li data-price = 70>Czerwony</li>
+                        <li data-price = 100>Czarny</li>
+                        <li data-price = 150>Pomarańczowy</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz materiał</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel hidden">
+                        <li data-price = 0>Tkanina</li>
+                        <li data-price = 250>Skóra</li>
+                    </ul>
+                </div>
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-price = 200>
+                    <label for="transport">Transport</label>
+                </div>
+                <!--<div class="checkbox"></div>-->
+                <!--<span class="list_label inline_text">Transport</span>-->
+            </div>
+        </section>
+
+        <section class="image_part inline">
+            <img src="images/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+            <div class=" header align_right">
+                <h3>PODSUMOWANIE</h3>
+                <span class="green_bell"></span>
+            </div>
+
+            <div class="summary_panel">
+              <div class="panels">
+                <div class="panel_left">
+                    <h4 class="title">Twój fotel</h4>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="title value"></h4>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+              </div>
+                <div  class="summary">
+                  <div class="sum_label">SUMA</div>
+                  <div class="sum">0</div>
+                </div>
+            </div>
+            <a href="" class="green_button">Zamawiam</a>
+        </section>
+    </div>
+</section>
+
+
+  <section id="contact">
     <!-- formularz-->
-<div class="main-width">
-  <div  class="subtitle underline">kontakt</div>
-  <form  class="contact_text">
-    <input type="text" name="name" placeholder="Imię"  class="contact"></input>
-    <input type="email" name="email" placeholder="email" class="contact"></input>
-    <textarea name="message" placeholder="Wiadomość" class="contact" rows="8"></textarea>
-  </form>
-  <img src=images/red_chair.png /><br>
-  <div type="checkbox"  class="checkbox"></div>
-  <label for="checkbox">Zgadzam się na przetwarzanie<br> danych osobowych</label>
-  <div class="button">wyślij</div>
-</div>
+    <div class="main-width">
+      <div class="subtitle underline">kontakt</div>
+      <div  class="form-all">
+      <form class="contact_text">
+        <input type="text" name="name" placeholder="Imię" class="contact"></input>
+        <input type="email" name="email" placeholder="email" class="contact"></input>
+        <textarea name="message" placeholder="Wiadomość" class="contact" rows="8"></textarea>
+      </form>
+      <div class="form-addons">
+      <img src=images/red_chair.png /><br>
+      <div class="agree">
+        <div type="checkbox" class="checkbox_contact"></div>
+        <label for="checkbox">Zgadzam się na przetwarzanie<br> danych osobowych</label>
+      </div>
+      <div class="button">wyślij</div>
+    </div>
+    </div>
+  </div>
   </section>
 
   <footer>
+
     <div class="main-width">
-    <div class="copyright">
-      Copyright 2014 | All Rights Reserved. - Sit On Chair
+      <div class="footer-left">
+        <div class="copyright">
+          Copyright 2014 | All Rights Reserved. - Sit On Chair
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="social_media">
+          <img src="images/twitter.png" />
+          <img src="images/pinterest.png" />
+          <img src="images/vimeo.png" />
+          <img src="images/flickr.png" />
+        </div>
+        <div class="small_logo">
+          sit <span>on</span> chair
+        </div>
+      </div>
     </div>
-    <div class="small_logo">
-      sit <span>on</span> chair
-    </div>
-    <div class="social_media">
-      <img src="images/twitter.png"/>
-      <img src="images/pinterest.png"/>
-      <img src="images/vimeo.png"/>
-      <img src="images/flickr.png"/>
-    </div>
-  </div>
   </footer>
+
+
 
 </body>
 
